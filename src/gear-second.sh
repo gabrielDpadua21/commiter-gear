@@ -6,9 +6,9 @@ Principal() {
     echo "------------------------------------------"
     echo "branch type:"
     echo
-    echo "1. 🐛Fix"
-    echo "2. ✨Feat"
-    echo "3. 👷Build"
+    echo "1. 🐛fix"
+    echo "2. ✨feat"
+    echo "3. 👷build"
     echo "4. 🔖chore"
     echo "5. 🚀ci"
     echo "6. 💄style"
@@ -21,11 +21,11 @@ Principal() {
     read opcao
     case $opcao in
         1) 
-            type="🐛Fix" ;;
+            type="🐛fix" ;;
         2) 
-            type="✨Feat" ;;
+            type="✨feat" ;;
         3) 
-            type="👷Build" ;;
+            type="👷build" ;;
         4) 
             type="🔖chore" ;;
         5) 
@@ -47,15 +47,10 @@ Principal() {
 
     echo "Branch type is: $type"
     echo "------------------------------------------"
-    inputMessage=()
-    while IFS= read -r -p "Commit message (press enter and Ctrl+D to finished): " line; do
-        inputMessage+=("$line")
-    done
+    read -p "commit message: " message
 
     sleep 0.1
     clear
-
-    message="${inputMessage[@]}"
 
     echo "This is your commit: $type: $message"
     echo "Confirm ? y/n"
