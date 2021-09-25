@@ -1,0 +1,1 @@
+echo "Commiter gear ⚙️ v1.0.0 - 😄"
