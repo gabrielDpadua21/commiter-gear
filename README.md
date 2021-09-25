@@ -48,6 +48,21 @@ $ gt
 
 ---
 
+## Commit types
+
+- 🐛fix
+- ✨feat
+- 👷build
+- 🔖chore
+- 🚀ci
+- 💄style
+- ♻️rrefactor
+- ⚡️perf
+- 🧪test
+- 🚪exit
+
+---
+
 ## Developed with
 <div align="center">
 
@@ -62,6 +77,13 @@ $ gt
 
 - Send PRs
 - Suggestions
+
+---
+
+## References
+
+- [Coventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
 
 ---
 
