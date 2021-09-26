@@ -53,7 +53,7 @@ Principal() {
 
     echo "Commit type is: $type"
     echo "------------------------------------------"
-    read -p "commit scope:" scope
+    read -p "commit scope: " scope
 
     sleep 0.1
     clear
