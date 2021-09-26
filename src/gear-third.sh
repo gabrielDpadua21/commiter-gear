@@ -4,7 +4,7 @@ Principal() {
     echo "Welcome to commiter gear"
     echo "This is ⚙️ gear third - big commit"
     echo "------------------------------------------"
-    echo "branch type:"
+    echo "Commit type:"
     echo
     echo "1. 🐛fix"
     echo "2. ✨feat"
@@ -15,11 +15,12 @@ Principal() {
     echo "7. ♻️rrefactor"
     echo "8. ⚡️perf"
     echo "9. 🧪test"
+    echo "10. 📝docs"
     echo "0. 🚪exit"
     echo
     echo -n "Choose a option? "
     read opcao
-    case $opcao in
+     case $opcao in
         1) 
             type="🐛fix" ;;
         2) 
@@ -37,23 +38,27 @@ Principal() {
         8) 
             type="⚡️perf" ;;
         9) 
-            type="🚪exit" ;;
-        0) exit ;;
-        *) "Opção desconhecida." ; echo ; Principal ;;
+            type="🧪test" ;;
+        10) 
+            type="📝docs" ;;
+        0) 
+            echo "Bye 🤗"
+            exit ;;
+        *) 
+            "Opção desconhecida." ; echo ; Principal ;;
     esac
 
     sleep 0.1
     clear
 
-    echo "Branch type is: $type"
+    echo "Commit type is: $type"
     echo "------------------------------------------"
-    echo "Scope:"
-    read scope
+    read -p "commit scope:" scope
 
     sleep 0.1
     clear
 
-    echo "Branch type is: $type, Scope is: $scope"
+    echo "Commit type is: $type - Scope is: $scope"
     echo "------------------------------------------"
     read -p "commit message: " message
     
@@ -69,7 +74,7 @@ Principal() {
            git commit -m "$type($scope): $message"  ;;
         'n') 
             Principal ;;
-        *) "Opção desconhecida." ; echo ; exit ;;
+        *) "Not a option." ; echo ; Principal ;;
     esac
 
     sleep 0.1
