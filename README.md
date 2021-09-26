@@ -16,6 +16,8 @@ this project was made to make working with commits easier, through a friendly in
 
 ### Install
 
+to install, just clone this repository on your machine, enter the directory and run:
+
 ```bash
 $ bash install.sh
 ```
@@ -53,6 +55,16 @@ This is a big commit with scope
 
 ```bash
 $ gt
+```
+
+---
+
+### Uninstall
+
+just run
+
+```shell
+$ bash uninstall.sh
 ```
 
 ---
