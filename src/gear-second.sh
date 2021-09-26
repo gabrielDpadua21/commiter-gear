@@ -4,7 +4,7 @@ Principal() {
     echo "Welcome to commiter gear"
     echo "This is ⚙️ gear second - fast commit"
     echo "------------------------------------------"
-    echo "branch type:"
+    echo "Commit type:"
     echo
     echo "1. 🐛fix"
     echo "2. ✨feat"
@@ -15,6 +15,7 @@ Principal() {
     echo "7. ♻️rrefactor"
     echo "8. ⚡️perf"
     echo "9. 🧪test"
+    echo "10. 📝docs"
     echo "0. 🚪exit"
     echo
     echo -n "Choose a option? "
@@ -37,9 +38,14 @@ Principal() {
         8) 
             type="⚡️perf" ;;
         9) 
-            type="🚪exit" ;;
-        0) exit ;;
-        *) "Opção desconhecida." ; echo ; Principal ;;
+            type="🧪test" ;;
+        10) 
+            type="📝docs" ;;
+        0) 
+            echo "Bye 🤗"
+            exit ;;
+        *) 
+            "Not a option." ; echo ; Principal ;;
     esac
 
     sleep 0.1
@@ -60,7 +66,7 @@ Principal() {
            git commit -m "$type: $message"  ;;
         'n') 
             Principal ;;
-        *) "Opção desconhecida." ; echo ; exit ;;
+        *) "Not a option." ; echo ; Principal ;;
     esac
 
     sleep 0.1
