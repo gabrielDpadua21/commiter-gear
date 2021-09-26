@@ -59,7 +59,7 @@ $ gt
 - ♻️rrefactor
 - ⚡️perf
 - 🧪test
-- 🚪exit
+- 📝docs
 
 ---
 
