@@ -28,6 +28,15 @@ run this command in terminal to verify if was commiter gear was installed
 $ gv
 ```
 
+### Help
+
+run this command in terminal to see the commiter gear options
+
+```bash
+$ gh
+```
+
+
 ### Commands
 
 #### Gear Second
@@ -38,7 +47,7 @@ This is a fast commit with no scope
 $ gs
 ```
 
-### Gear Third
+#### Gear Third
 
 This is a big commit with scope
 
