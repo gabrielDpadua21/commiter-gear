@@ -12,7 +12,7 @@ Principal() {
     echo "4. 🔖chore"
     echo "5. 🚀ci"
     echo "6. 💄style"
-    echo "7. ♻️rrefactor"
+    echo "7. ♻️refactor"
     echo "8. ⚡️perf"
     echo "9. 🧪test"
     echo "10. 📝docs"
@@ -34,7 +34,7 @@ Principal() {
         6) 
             type="💄style" ;;
         7) 
-            type="♻️rrefactor" ;;
+            type="♻️refactor" ;;
         8) 
             type="⚡️perf" ;;
         9) 
