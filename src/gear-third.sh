@@ -1,6 +1,7 @@
 #!/bin/bash
 
 Principal() {
+	clear
     echo "Welcome to commiter gear"
     echo "This is ⚙️ gear third - big commit"
     echo "------------------------------------------"
@@ -66,16 +67,18 @@ Principal() {
     sleep 0.1
     clear
 
-    echo "This is your commit: $type: $message"
-    echo "Confirm ? y/n"
-    read confirm
-    case $confirm in
-        'y') 
-           git commit -m "$type($scope): $message"  ;;
-        'n') 
-            Principal ;;
-        *) "Not a option." ; echo ; Principal ;;
-    esac
+	echo "This is your commit: $type($scope): $message"
+	while true; do
+		read -p "Confirm the commit ? y/n " yn
+		case $yn in
+			[Yy]* )
+				git commit -m "$type($scope): $message"
+				break;;
+			[Nn]* ) Principal;;
+			* ) echo "Please answer yes (y) or no (n)"
+		esac
+	done
+
 
     sleep 0.1
     echo "------------------------------------------"
