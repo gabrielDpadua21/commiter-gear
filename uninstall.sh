@@ -1,11 +1,10 @@
 
-
 if [ $SHELL == "/usr/bin/zsh" ] 
 then
-    cp ~/.commiter/.zshrc-bkp ~/.zshrc
+	sed -i '/<<<commiter>>>/,+5 d' ~/.zshrc
 elif [ $SHELL == "bash" ] 
 then
-    cp ~/.commiter/.bashrc-bkp ~/.bashrc
+	sed -i '/<<<commiter>>>/,+5 d' ~/.zshrc
 else 
     echo "Shell not suported"
     exit 1
