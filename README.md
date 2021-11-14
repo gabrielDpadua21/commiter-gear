@@ -4,7 +4,7 @@ v 1.2.1
 ---
 
 <div align="center">
-    <img src="./luffy.jpeg">
+    <img src="./luffy.jpeg" width="100%">
 </div>
 
 ## Project Commiter Gear ⚙️ 
