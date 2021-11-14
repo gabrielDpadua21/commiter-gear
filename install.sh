@@ -6,18 +6,20 @@ cp src/gear-third.sh ~/.commiter/gear-third.sh
 
 if [ $SHELL == "/usr/bin/zsh" ] 
 then
-    cp ~/.zshrc ~/.commiter/.zshrc-bkp
+	echo '#<<<commiter>>>' >> ~/.zshrc
     echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.zshrc
     echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.zshrc
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.zshrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.zshrc
+	echo '#<<<commiter>>' >> ~/.zshrc
 elif [ $SHELL == "bash" ] 
 then
-    cp ~/.bashrc ~/.commiter/.bashrc-bkp 
+	echo '#<<<commiter>>>' >> ~/.bashrc
     echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.bashrc
     echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.bashrc
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.bashrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.bashrc
+	echo '#<<<commiter>>' >> ~/.bashrc
 else 
     echo "Shell not suported"
     exit 1
