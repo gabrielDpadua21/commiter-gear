@@ -1,5 +1,6 @@
 # Commiter Gear ⚙️ 
 
+v 1.2.1
 ---
 
 <div align="center">
