@@ -3,6 +3,7 @@ cp src/version.sh ~/.commiter/version.sh
 cp src/help.sh ~/.commiter/help.sh
 cp src/gear-second.sh ~/.commiter/gear-second.sh
 cp src/gear-third.sh ~/.commiter/gear-third.sh
+cp src/gomu-pistol.sh ~/.commiter/gomu-pistol.sh
 
 if [ $SHELL == "/usr/bin/zsh" ] 
 then
@@ -11,6 +12,7 @@ then
     echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.zshrc
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.zshrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.zshrc
+    echo 'alias gp="bash ~/.commiter/gomu-pistol.sh"' >> ~/.zshrc
 	echo '#<<<commiter>>' >> ~/.zshrc
 elif [ $SHELL == "bash" ] 
 then
@@ -19,6 +21,7 @@ then
     echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.bashrc
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.bashrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.bashrc
+    echo 'alias gp="bash ~/.commiter/gomu-pistol.sh"' >> ~/.bashrc
 	echo '#<<<commiter>>' >> ~/.bashrc
 else 
     echo "Shell not suported"
