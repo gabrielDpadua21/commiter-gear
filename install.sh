@@ -5,7 +5,7 @@ cp src/gear-second.sh ~/.commiter/gear-second.sh
 cp src/gear-third.sh ~/.commiter/gear-third.sh
 cp src/gomu-pistol.sh ~/.commiter/gomu-pistol.sh
 
-if [ $SHELL == "/usr/bin/zsh" ] 
+if [ $SHELL == "/usr/bin/zsh" ] || [ $SHELL == "/bin/zsh" ] 
 then
 	echo '#<<<commiter>>>' >> ~/.zshrc
     echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.zshrc
