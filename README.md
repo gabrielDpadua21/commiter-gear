@@ -58,12 +58,12 @@ This is a big commit with scope
 $ gt
 ```
 
-#### Gomu Gomu Jet no Pistol
+#### Gomu Gomu no Jet Pistol
 
 This command is to push to remove repository in your current branch
 
 ```
-$ gp
+$ gj
 ```
 
 ---
