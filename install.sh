@@ -12,16 +12,16 @@ then
     echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.zshrc
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.zshrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.zshrc
-    echo 'alias gp="bash ~/.commiter/gomu-pistol.sh"' >> ~/.zshrc
+    echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.zshrc
 	echo '#<<<commiter>>' >> ~/.zshrc
-elif [ $SHELL == "bash" ] 
+elif [ $SHELL == "bash" ]
 then
 	echo '#<<<commiter>>>' >> ~/.bashrc
     echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.bashrc
     echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.bashrc
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.bashrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.bashrc
-    echo 'alias gp="bash ~/.commiter/gomu-pistol.sh"' >> ~/.bashrc
+    echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.bashrc
 	echo '#<<<commiter>>' >> ~/.bashrc
 else 
     echo "Shell not suported"

@@ -2,6 +2,9 @@
 
 Main() {
     clear
+    echo "Gomu Gomu no Jet Pistol 🚀"
+    echo "This is ⚙️ Gomu Gomu no Jet Pistol - fast push"
+    echo "------------------------------------------"
     branch=$(git branch --show-current)
     while true; do
 		read -p "Do you want to push to branch 🤔? $branch " yn
