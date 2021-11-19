@@ -58,6 +58,14 @@ This is a big commit with scope
 $ gt
 ```
 
+#### Gomu Gomu no Pistol
+
+This command is to push to remove repository in your current branch
+
+```
+$ gp
+```
+
 ---
 
 ### Uninstall
