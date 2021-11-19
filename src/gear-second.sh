@@ -2,7 +2,7 @@
 
 Principal() {
 	clear
-    echo "Welcome to commiter gear"
+    echo "Gear Second 🚄"
     echo "This is ⚙️ gear second - fast commit"
     echo "------------------------------------------"
     echo "Commit type:"
