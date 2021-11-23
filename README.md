@@ -80,7 +80,7 @@ $ bash uninstall.sh
 
 ## Commit types
 
-- 🪲 fix
+- 🐞fix
 - ✨feat
 - 👷build
 - 🔖chore
