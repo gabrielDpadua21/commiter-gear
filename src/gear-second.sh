@@ -7,7 +7,7 @@ Principal() {
     echo "------------------------------------------"
     echo "Commit type:"
     echo
-    echo "1. 🪲 fix"
+    echo "1. 🐞fix"
     echo "2. ✨feat"
     echo "3. 👷build"
     echo "4. 🔖chore"
@@ -23,7 +23,7 @@ Principal() {
     read opcao
     case $opcao in
         1) 
-            type="🐛fix" ;;
+            type="🐞fix" ;;
         2) 
             type="✨feat" ;;
         3) 
