@@ -1,6 +1,6 @@
 # Commiter Gear ⚙️ 
 
-v 1.2.1
+v 1.3.1
 ---
 
 <div align="center">
@@ -60,7 +60,7 @@ $ gt
 
 #### Gomu Gomu no Jet Pistol
 
-This command is to push to remove repository in your current branch
+This command is to push to remote repository in your current branch
 
 ```
 $ gj
