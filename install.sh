@@ -14,7 +14,7 @@ then
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.zshrc
     echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.zshrc
 	echo '#<<<commiter>>' >> ~/.zshrc
-elif [ $SHELL == "bash" ]
+elif [ $SHELL == "bash" ] || [ $SHELL == "/bin/bash" ]
 then
 	echo '#<<<commiter>>>' >> ~/.bashrc
     echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.bashrc
