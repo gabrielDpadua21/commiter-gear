@@ -24,7 +24,7 @@ then
     echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.bashrc
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.bashrc
     echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.bashrc
-    echo 'alias gr="bash ~/.commiter/gomu-rocket.sg"' >> ~/.bashrc
+    echo 'alias gr="bash ~/.commiter/gomu-rocket.sh"' >> ~/.bashrc
 	echo '#<<<commiter>>' >> ~/.bashrc
 else 
     echo "Shell not suported"
