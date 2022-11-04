@@ -7,41 +7,51 @@ Principal() {
     echo "------------------------------------------"
     echo "Commit type:"
     echo
-    echo "1. 🐞fix"
-    echo "2. ✨feat"
-    echo "3. 👷build"
-    echo "4. 🔖chore"
-    echo "5. 🚀ci"
-    echo "6. 💄style"
-    echo "7. ♻️ refactor"
-    echo "8. ⚡️perf"
-    echo "9. 🧪test"
-    echo "10. 📝docs"
-    echo "0. 🚪exit"
+    echo "1. fix:🐞"
+    echo "2. feat:✨"
+    echo "3. build:👷"
+    echo "4. chore:🔖"
+    echo "5. ci:🚀"
+    echo "6. style:💄"
+    echo "7. refactor:♻️"
+    echo "8. perf:⚡️"
+    echo "9. test:🧪"
+    echo "10. docs:📝"
+    echo "0. exit:🚪"
     echo
     echo -n "Choose a option? "
     read opcao
      case $opcao in
         1) 
-            type="🐞fix" ;;
+            type="fix" 
+            emoji="🐞" ;;
         2) 
-            type="✨feat" ;;
+            type="feat" 
+            emoji="✨" ;;
         3) 
-            type="👷build" ;;
+            type="build" 
+            emoji="👷" ;;
         4) 
-            type="🔖chore" ;;
+            type="chore" 
+            emoji="🔖" ;;
         5) 
-            type="🚀ci" ;;
+            type="ci" 
+            emoji="🚀" ;;
         6) 
-            type="💄style" ;;
+            type="style" 
+            emoji="💄" ;;
         7) 
-            type="♻️refactor" ;;
+            type="refactor" 
+            emoji="♻️" ;;
         8) 
-            type="⚡️perf" ;;
+            type="perf" 
+            emoji="⚡️" ;;
         9) 
-            type="🧪test" ;;
+            type="test" 
+            emoji="🧪" ;;
         10) 
-            type="📝docs" ;;
+            type="docs" 
+            emoji="📝" ;;
         0) 
             echo "Bye 🤗"
             exit ;;
@@ -67,12 +77,12 @@ Principal() {
     sleep 0.1
     clear
 
-	echo "This is your commit: $type($scope): $message"
+	echo "This is your commit: $type($scope):$emoji $message"
 	while true; do
 		read -p "Confirm the commit ? y/n " yn
 		case $yn in
 			[Yy]* )
-				git commit -m "$type($scope): $message"
+				git commit -m "$type($scope):$emoji $message"
 				break;;
 			[Nn]* ) Principal;;
 			* ) echo "Please answer yes (y) or no (n)"
