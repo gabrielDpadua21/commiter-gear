@@ -1,5 +1,5 @@
 
-if [ $SHELL == "/usr/bin/zsh" ] 
+if [ $SHELL == "/usr/bin/zsh" ] || [ $SHELL == "/bin/zsh" ] 
 then
 	sed -i '/<<<commiter>>>/,+7 d' ~/.zshrc
 elif [ $SHELL == "bash" ] || [ $SHELL == "/bin/bash" ] 
