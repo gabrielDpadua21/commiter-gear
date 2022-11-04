@@ -7,41 +7,41 @@ Principal() {
     echo "------------------------------------------"
     echo "Commit type:"
     echo
-    echo "1. 🐞fix"
-    echo "2. ✨feat"
-    echo "3. 👷build"
-    echo "4. 🔖chore"
-    echo "5. 🚀ci"
-    echo "6. 💄style"
-    echo "7. ♻️ refactor"
-    echo "8. ⚡️perf"
-    echo "9. 🧪test"
-    echo "10. 📝docs"
-    echo "0. 🚪exit"
+    echo "1. fix:🐞"
+    echo "2. feat:✨"
+    echo "3. build:👷"
+    echo "4. chore:🔖"
+    echo "5. ci:🚀"
+    echo "6. style:💄"
+    echo "7. refactor:♻️"
+    echo "8. perf:⚡️"
+    echo "9. test:🧪"
+    echo "10. docs:📝"
+    echo "0. exit:🚪"
     echo
     echo -n "Choose a option? "
     read opcao
     case $opcao in
         1) 
-            type="🐞fix" ;;
+            type="fix:🐞" ;;
         2) 
-            type="✨feat" ;;
+            type="feat:✨" ;;
         3) 
-            type="👷build" ;;
+            type="build:👷" ;;
         4) 
-            type="🔖chore" ;;
+            type="chore:🔖" ;;
         5) 
-            type="🚀ci" ;;
+            type="ci:🚀" ;;
         6) 
-            type="💄style" ;;
+            type="style:💄" ;;
         7) 
-            type="♻️refactor" ;;
+            type="refactor:♻️" ;;
         8) 
-            type="⚡️perf" ;;
+            type="perf:⚡️" ;;
         9) 
-            type="🧪test" ;;
+            type="test:🧪" ;;
         10) 
-            type="📝docs" ;;
+            type="docs:📝" ;;
         0) 
             echo "Bye 🤗"
             exit ;;
@@ -59,12 +59,12 @@ Principal() {
     sleep 0.1
     clear
 
-    echo "This is your commit: $type: $message"
+    echo "This is your commit: $type $message"
 	while true; do
 		read -p "Confirm the commit ? y/n " yn
 		case $yn in
 			[Yy]* ) 
-				git commit -m "$type: $message"
+				git commit -m "$type $message"
 				break;;
 			[Nn]* ) Principal;;
 			* ) echo "Please answer yes (y) or no (n) "
