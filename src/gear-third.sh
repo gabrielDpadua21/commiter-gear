@@ -77,7 +77,7 @@ Principal() {
     sleep 0.1
     clear
 
-	echo "This is your commit: $type($scope):$emoji $message"
+	echo "This is your commit: $type($scope): $emoji $message"
 	while true; do
 		read -p "Confirm the commit ? y/n " yn
 		case $yn in

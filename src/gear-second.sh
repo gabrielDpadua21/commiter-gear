@@ -23,25 +23,25 @@ Principal() {
     read opcao
     case $opcao in
         1) 
-            type="fix:🐞" ;;
+            type="fix: 🐞" ;;
         2) 
-            type="feat:✨" ;;
+            type="feat: ✨" ;;
         3) 
-            type="build:👷" ;;
+            type="build: 👷" ;;
         4) 
-            type="chore:🔖" ;;
+            type="chore: 🔖" ;;
         5) 
-            type="ci:🚀" ;;
+            type="ci: 🚀" ;;
         6) 
-            type="style:💄" ;;
+            type="style: 💄" ;;
         7) 
-            type="refactor:♻️" ;;
+            type="refactor: ♻️" ;;
         8) 
-            type="perf:⚡️" ;;
+            type="perf: ⚡️" ;;
         9) 
-            type="test:🧪" ;;
+            type="test: 🧪" ;;
         10) 
-            type="docs:📝" ;;
+            type="docs: 📝" ;;
         0) 
             echo "Bye 🤗"
             exit ;;
