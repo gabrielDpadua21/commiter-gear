@@ -1,7 +1,7 @@
 
 if [ $SHELL == "/usr/bin/zsh" ] || [ $SHELL == "/bin/zsh" ] 
 then
-	sed -i '/<<<commiter>>>/,+7 d' ~/.zshrc
+    rm -rf ~/.commiter.zsh
 elif [ $SHELL == "bash" ] || [ $SHELL == "/bin/bash" ] 
 then
 	sed -i '/<<<commiter>>>/,+7 d' ~/.bashrc
