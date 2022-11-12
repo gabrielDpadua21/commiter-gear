@@ -8,14 +8,16 @@ cp src/gomu-rocket.sh ~/.commiter/gomu-rocket.sh
 
 if [ $SHELL == "/usr/bin/zsh" ] || [ $SHELL == "/bin/zsh" ] 
 then
-	echo '#<<<commiter>>>' >> ~/.zshrc
-    echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.zshrc
-    echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.zshrc
-    echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.zshrc
-    echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.zshrc
-    echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.zshrc
-    echo 'alias gr="bash ~/.commiter/gomu-rocket.sh"' >> ~/.zshrc
-	echo '#<<<commiter>>' >> ~/.zshrc
+  touch ~/.commiter.zsh
+	echo '#<<<commiter>>>' >> ~/.commiter.zsh
+    echo 'alias gs="bash ~/.commiter/gear-second.sh"' >> ~/.commiter.zsh
+    echo 'alias gt="bash ~/.commiter/gear-third.sh"' >> ~/.commiter.zsh
+    echo 'alias gv="bash ~/.commiter/version.sh"' >> ~/.commiter.zsh
+    echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.commiter.zsh
+    echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.commiter.zsh
+    echo 'alias gr="bash ~/.commiter/gomu-rocket.sh"' >> ~/.commiter.zsh
+	echo '#<<<commiter>>' >> ~/.commiter.zsh
+  echo '[[ ! -f ~/.commiter.zsh ]] || source ~/.commiter.zsh' >> ~/.zshrc
 elif [ $SHELL == "bash" ] || [ $SHELL == "/bin/bash" ]
 then
 	echo '#<<<commiter>>>' >> ~/.bashrc
