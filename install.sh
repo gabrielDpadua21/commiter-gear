@@ -5,6 +5,7 @@ cp src/gear-second.sh ~/.commiter/gear-second.sh
 cp src/gear-third.sh ~/.commiter/gear-third.sh
 cp src/gomu-pistol.sh ~/.commiter/gomu-pistol.sh
 cp src/gomu-rocket.sh ~/.commiter/gomu-rocket.sh
+cp src/haki.sh ~/.commiter/haki.sh
 
 if [ $SHELL == "/usr/bin/zsh" ] || [ $SHELL == "/bin/zsh" ] 
 then
@@ -16,6 +17,7 @@ then
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.commiter.zsh
     echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.commiter.zsh
     echo 'alias gr="bash ~/.commiter/gomu-rocket.sh"' >> ~/.commiter.zsh
+    echo 'alias haki="bash ~/.commiter/haki.sh"' >> ~/.commiter.zsh
 	echo '#<<<commiter>>' >> ~/.commiter.zsh
   echo '[[ ! -f ~/.commiter.zsh ]] || source ~/.commiter.zsh' >> ~/.zshrc
 elif [ $SHELL == "bash" ] || [ $SHELL == "/bin/bash" ]
@@ -27,6 +29,7 @@ then
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.bashrc
     echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.bashrc
     echo 'alias gr="bash ~/.commiter/gomu-rocket.sh"' >> ~/.bashrc
+    echo 'alias haki="bash ~/.commiter/haki.sh"' >> ~/.commiter.zsh
 	echo '#<<<commiter>>' >> ~/.bashrc
 else 
     echo "Shell not suported"
