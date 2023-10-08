@@ -29,7 +29,6 @@ then
     echo 'alias gh="bash ~/.commiter/help.sh"' >> ~/.bashrc
     echo 'alias gj="bash ~/.commiter/gomu-pistol.sh"' >> ~/.bashrc
     echo 'alias gr="bash ~/.commiter/gomu-rocket.sh"' >> ~/.bashrc
-    echo 'alias haki="bash ~/.commiter/haki.sh"' >> ~/.commiter.zsh
 	echo '#<<<commiter>>' >> ~/.bashrc
 else 
     echo "Shell not suported"
